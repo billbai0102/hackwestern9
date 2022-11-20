@@ -1,4 +1,5 @@
 from flask import Flask, render_template, send_from_directory, request
+from cohere_functions import CohereFuncs
 
 app = Flask(__name__)
 
@@ -31,4 +32,6 @@ def script():
 def values():
     paramInput = request.args.get('input')
     print("value: " + paramInput)
+    cf = CohereFuncs("JuqpapPUIT9dRAH5a06D4rIj7tTnbWVwY59dY4eC")
+    print(cf.get_similar_disease(paramInput))
     return "this is a test response"
