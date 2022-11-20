@@ -24,7 +24,7 @@ class CohereFuncs:
             search_index.add_item(i, embeds[i])
         search_index.build(10)
 
-        similar_item_ids = search_index.get_nns_by_vector(report_embed, 5, include_distances=True)
+        similar_item_ids = search_index.get_nns_by_vector(report_embed, 2, include_distances=True)
 
         for i in similar_item_ids[0]:
             print(data[i]['name'])
@@ -34,7 +34,7 @@ class CohereFuncs:
 
     def get_data_from_mongo(self):
         # mongo.getData("lucy-wang-instance-v2")
-        descriptions = pd.read_csv("./Diseases_and_Symptoms/archive/symptom_Description.csv")
+        descriptions = pd.read_csv("./Diseases_and_Symptoms/archive/symptoms_reports.csv")
         name = descriptions['Disease'].tolist()
         desc = descriptions['Description'].tolist()
         embeds = self.co.embed(model='large', texts=desc).embeddings
@@ -51,6 +51,5 @@ class CohereFuncs:
 
 if __name__ == '__main__':
     cf = CohereFuncs("JuqpapPUIT9dRAH5a06D4rIj7tTnbWVwY59dY4eC")
-    # print(cf.get_embed_from_mongo())
-    print(cf.get_similar_disease("patient is overdosing"))
+    print(cf.get_similar_disease("the patient has itchy blisters all over the body. we have medicated them with topical cream!"))
 
