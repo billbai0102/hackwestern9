@@ -18,3 +18,5 @@ for i in range(len(name)):
     print("desc: ", desc[i])
     print("embed: ", embeds[i])
     print()
+
+print("done")
