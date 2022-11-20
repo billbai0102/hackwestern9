@@ -56,7 +56,7 @@
    }
    
    .heading {
-     margin-top: 275px;
+     margin-top: 175px;
      font-family: Montserrat, sans-serif;
      text-align: center;
    }
@@ -250,7 +250,8 @@
    .text-field {
      display: block;
      width: 200px;
-     margin-left: 51px;
+     margin: auto;
+     margin-left: 501px;
    }
    
    .text-field-copy {
@@ -266,7 +267,6 @@
    }
    
    .submit-button {
-     margin-left: 119px;
      padding-right: 22px;
      padding-left: 20px;
      border-radius: 20px;
