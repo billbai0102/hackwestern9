@@ -50,6 +50,7 @@ class CohereFuncs:
 
 
 if __name__ == '__main__':
+    # for testing purposes
     cf = CohereFuncs("JuqpapPUIT9dRAH5a06D4rIj7tTnbWVwY59dY4eC")
     print(cf.get_similar_disease("the patient has itchy blisters all over the body. we have medicated them with topical cream!"))
 
