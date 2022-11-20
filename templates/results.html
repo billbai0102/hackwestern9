@@ -77,7 +77,7 @@
     <div class="section wf-section">
         <div class="w-form">
             <label for="email-3" class="field-label-4">Your report</label>
-                <textarea id="report_plug" rows="7" cols="90" class="text-field-copy w-input" style="width:auto;"
+                <textarea id="report_plug" rows="7" cols="110" class="text-field-copy w-input" style="width:auto;"
                 >Patient suffers from increased blood pressure. Reported lack of sleep during recent days. No reports of hunger or lack of energy, but complains of headaches.
                 </textarea>
             <br/><br/>
@@ -226,15 +226,43 @@ var plugElem = document.getElementById("report_plug");
 plugElem.value = plug;
 
 function setVals(response){
+    console.log("setting value . . .");
+
+    const myJson = JSON.parse(response);
+    console.log(myJson.list[0]);
+
+    const pElems = [document.getElementById("p1"), document.getElementById("p2"),
+    document.getElementById("p3"),
+    document.getElementById("p4"),
+    document.getElementById("p5"),
+    document.getElementById("p6"),
+    document.getElementById("p7"),
+    document.getElementById("p8")];
+
+    const dElems = [document.getElementById("d1"), document.getElementById("d2"),
+    document.getElementById("d3"),
+    document.getElementById("d4"),
+    document.getElementById("d5"),
+    document.getElementById("d6"),
+    document.getElementById("d7"),
+    document.getElementById("d8")];
+
+    for (let i = 0; i < 8; i++){
+        pElems[i].innerHTML = myJson.list[i].report;
+        dElems[i].innerHTML = myJson.list[i].diagnosis;
+    }
+
+    /*
     var p1 = document.getElementById("p1");
     p1.innerHTML  = "hello this is a test";
     var d1 = document.getElementById("d1");
     d1.innerHTML  = "cancer";
+    */
 }
 
 var client = new HttpClient();
 client.get('values?input=' + plug, function(response) {
-    console.log(response);
+    console.log(response); setVals(response)
 });
 
 
