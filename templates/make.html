@@ -107,7 +107,9 @@
     <script>
         function goToResults(){
             console.log("clicked");
-            window.location.href = "results";
+            var myText = document.getElementById("symptoms_input").value;
+            console.log(myText);
+            window.location.href = "/results?input=" + myText;
         }
 
     </script>
