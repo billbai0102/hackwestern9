@@ -1,0 +1,33 @@
+Disease,Description
+Drug Reaction,"Patient consumed medication 8 hours in advance, then again. We believe the patient may have an adverse drug reaction due to the mixture of two drugs (Advil and Tylenol). They are experiencing vomiting, stomach discomfort, rashes, and nausea. Patient has been stabilized after stomach pumping."
+Adverse Drug Reaction,"Patient consumed drugs 6 hours in advance, then again. We believe the patient may have an adverse drug reaction (ADR) due to the mixture of two cocaine and codeine. They are experiencing vomiting, stomach discomfort, nausea, and headaches."
+Malaria,"Patient visited an African country 5 months ago and got bitten by mosquitoes. We believe they have Malaria. It is an infectious disease caused by protozoan parasites from the Plasmodium family that can be transmitted by the bite of the Anopheles mosquito or by a contaminated needle or transfusion. Falciparum malaria is the most deadly type. They experience sweats, colds, and also rashes across the body."
+Malaria,"Patient visited a Zimbabwe 7 months ago and had contact with Malaria. They used a bloody needle that had been used by a malaria patient the day before. They experience sweats, rashes, and also bumps across the body."
+Allergic Reaction,"Patient had been eating peanuts before they had an anaphylactic reaction. They complained of shortness of breath, swollen throat, and a red face. They have a peanut allergy."
+Allergy,"Patient had been eating tree nuts when they had an anaphylactic reaction. They had experienced shortness of breath, swollen throat, and a red face. They have are allergic to nuts."
+Allergies,"Patient had been playing with pets and then they had an anaphylactic reaction. They had experienced shortness of breath, swollen throat, and a red face. They have are allergic to fur."
+Hypothyroidism,"The patient has been experiencing high anxiety due to an overactive thyroid. Upon further inspection, they have an imbalance of hormones. Hypothyroidism, also called underactive thyroid or low thyroid, is a disorder of the endocrine system in which the thyroid gland does not produce enough thyroid hormone. They have anxiety, fast metabolism, and complain of feeling tired all the time."
+Hypothyroidism,"The patient has been experiencing depression due to an underactive thyroid. Upon further inspection, they have an imbalance of hormones. We have diagnosed them with hyperthyroidism. They have anxiety, depression, slow metabolism, and complain of feeling tired all the time. They are always hungry."
+Psoriasis,"Patient has symptoms of forms thick, red, bumpy patches covered with silvery scales. They appear on the scalp, elbows, knees, and lower back. They have family members with the same condition."
+Psoriasis,"Patient has symptoms silvery scales on their scalp, elbows, knees, and lower back. They have a genetic history of psoriasis."
+GERD,"Patient has a a digestive disorder that affects the lower esophageal sphincter (LES), the ring of muscle between the esophagus and stomach. They are suffering from acid reflux and heartburn as a result"
+GERD,"The patient is suffering from acid reflux and heartburn. We believe they may have GERD. It affects their lower esophagus and causes general discomfort"
+hepatitis A,"The patient has a highly contagious liver infection caused by the hepatitis A virus. The virus is one of several types of hepatitis viruses that cause inflammation and affect their liver's ability to function. They have jaundice, inflammation in their liver, and caused by STDs"
+Osteoarthristis,"The patient has been complaining about pain in the knuckles and joints for a year. They have are unable to clench their hands and hold a pencil, and x-rays show that their cartilage has been strongly worn down."
+Osteoarthristis,"The patient has worn down cartilage in their knuckles and knees. They are unable to hold a pencil due to the condition. We have prescribed Tylemorphious to help them strengthen their cartilage and reduce wear."
+Alcoholic hepatitis,"Patient has a history of alcoholism and drug abuse. We believe they may have alcoholic hepatitis. They have an inflamed liver and are complaining about nausea, migraines, and bodily pain. They have been binge drinking for a while."
+Hepatitis E,"Patient has an inflamed liver and are complaining of nausea, migraines, and bodily pain. We believe they have hepatatis E. They came in contact with another Hep-E positive person days before where they exchanged bodily fluids."
+Hepatitis D,"The patient has an inflamed liver. They have symptoms like migraines, nausea, and an aching body. We believe they have hepatitis D. They got it through sexual contact with another Hep-D patient."
+Hypoglycemia,"The patient has a history of eating unhealthy foods with high sugar and fat content. We have diagnosed them with Diabetes / Hypoglycemia. Their symptoms include a loss of vision in their eyes, weight gain, low blood circulation to their appendages, and high blood sugar levels"
+Diabetes,"The patient may have diabetes. They have high blood sugar content, along with reduced blood circulation in the legs, and decreased vision."
+Diabetes,"The patient may have diabetes. They have high blood glucose, and decreased vision. We may have to amputate their foot due to reduced blood circulation in their feet."
+Hypertension,"Hypertension (HTN or HT), also known as high blood pressure (HBP), is a long-term medical condition in which the blood pressure in the arteries is persistently elevated. High blood pressure typically does not cause symptoms. We believe the patient has high blood pressure. It is causing anxiety and high blood pressure"
+Chicken pox,"The patient has itchy blisters all over their body. They are 8 years old and have been complaining of itchiness and redness for the past few days. They are feeling well aside from itchiness."
+Chicken pox,"We think the patient has chicken pox. We have medicated them with topical steroid cream and aside from that, their immune system will work to fight it off."
+
+
+
+
+
+
+
