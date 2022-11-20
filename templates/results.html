@@ -83,7 +83,7 @@
             <br/><br/>
             <label for="email-3" class="field-label-4">Similar Reports</label>
 
-            <button type="button" class="collapsible">Report #98373</button>
+            <button type="button" class="collapsible" id="drop1"></button>
             <div class="content">
 
               <p><b>Date</b>: 05-22-2017</p>
@@ -95,7 +95,7 @@
             </div>
             <br/>
 
-            <button type="button" class="collapsible">Report #75831</button>
+            <button type="button" class="collapsible" id="drop2"></button>
             <div class="content">
 
               <p><b>Date</b>: 10-17-2019</p>
@@ -107,7 +107,7 @@
             </div>
             <br/>
 
-            <button type="button" class="collapsible">Report #29284</button>
+            <button type="button" class="collapsible" id="drop3"></button>
             <div class="content">
 
               <p><b>Date</b>: 04-27-2020</p>
@@ -119,7 +119,7 @@
             </div>
             <br/>
 
-            <button type="button" class="collapsible">Report #10472</button>
+            <button type="button" class="collapsible" id="drop4"></button>
             <div class="content">
 
               <p><b>Date</b>: 08-06-2021</p>
@@ -131,7 +131,7 @@
             </div>
             <br/>
 
-            <button type="button" class="collapsible">Report #66193</button>
+            <button type="button" class="collapsible" id="drop5"></button>
             <div class="content">
 
               <p><b>Date</b>: 12-14-2018</p>
@@ -143,7 +143,7 @@
             </div>
             <br/>
 
-            <button type="button" class="collapsible">Report #58194</button>
+            <button type="button" class="collapsible" id="drop6"></button>
             <div class="content">
 
               <p><b>Date</b>: 05-17-2022</p>
@@ -155,7 +155,7 @@
             </div>
             <br/>
 
-            <button type="button" class="collapsible">Report #81742</button>
+            <button type="button" class="collapsible" id="drop7"></button>
             <div class="content">
 
               <p><b>Date</b>: 09-28-2016</p>
@@ -167,7 +167,7 @@
             </div>
             <br/>
 
-            <button type="button" class="collapsible">Report #34792</button>
+            <button type="button" class="collapsible" id="drop8"></button>
             <div class="content">
 
               <p><b>Date</b>: 01-07-2019</p>
@@ -247,9 +247,19 @@ function setVals(response){
     document.getElementById("d7"),
     document.getElementById("d8")];
 
+    const dropElems = [document.getElementById("drop1"), document.getElementById("drop2"),
+    document.getElementById("drop3"),
+    document.getElementById("drop4"),
+    document.getElementById("drop5"),
+    document.getElementById("drop6"),
+    document.getElementById("drop7"),
+    document.getElementById("drop8")];
+
     for (let i = 0; i < 8; i++){
         pElems[i].innerHTML = myJson.list[i].report;
         dElems[i].innerHTML = myJson.list[i].diagnosis;
+
+        dropElems[i].innerHTML = "Report #" + Math.floor((Math.random() * 9000) + 1000);
     }
 
     /*
