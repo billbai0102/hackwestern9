@@ -24,13 +24,17 @@ class CohereFuncs:
             search_index.add_item(i, embeds[i])
         search_index.build(10)
 
-        similar_item_ids = search_index.get_nns_by_vector(report_embed, 2, include_distances=True)
+        similar_item_ids = search_index.get_nns_by_vector(report_embed, 8, include_distances=True)
+
+        similar_items = []
 
         for i in similar_item_ids[0]:
-            print(data[i]['name'])
-            print(data[i]['desc'])
+            similar_items.append({
+                "diagnosis": data[i]['name'],
+                "report": data[i]['desc'],
+            })
 
-        return similar_item_ids
+        return similar_items
 
     def get_data_from_mongo(self):
         # mongo.getData("lucy-wang-instance-v2")
