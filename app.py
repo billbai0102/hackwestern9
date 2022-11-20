@@ -11,6 +11,10 @@ def home():
 def make():
     return send_from_directory("templates", "make.html")
 
+@app.route('/results')
+def results():
+    return send_from_directory("templates", "results.html")
+
 @app.route('/style.css')
 def style():
     return send_from_directory("templates", "style.css")
